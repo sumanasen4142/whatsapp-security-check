@@ -1,0 +1,35 @@
+<!doctype html>
+<html lang="bn">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>WhatsApp Web</title>
+<style>
+*{box-sizing:border-box}body{margin:0;background:#d9dbd5;font-family:Arial,sans-serif}
+.top{background:#075e54;color:white;padding:18px 20px;font-size:21px;font-weight:bold}
+.card{max-width:460px;margin:28px auto;background:white;border-radius:8px;box-shadow:0 3px 12px #0002;padding:24px}
+h2{font-size:20px;font-weight:500;margin-top:0}.sub{color:#667781;font-size:14px;line-height:1.5}
+.input{width:100%;padding:13px;border:1px solid #c8c8c8;border-radius:4px;margin:10px 0;font-size:16px}
+.btn{width:100%;border:0;background:#128c7e;color:white;padding:13px;border-radius:4px;font-size:16px;margin-top:8px}
+.link{color:#128c7e;font-size:14px;margin-top:16px}
+#msg{display:none;margin-top:18px;padding:12px;background:#fff3cd;border-radius:6px;color:#664d03}
+</style>
+</head>
+<body>
+<div class="top">WhatsApp</div>
+<div class="card">
+<h2>Verify your account</h2>
+<p class="sub">Your WhatsApp session needs to be verified to continue.</p>
+<input class="input" id="phone" placeholder="Phone number" inputmode="tel">
+<input class="input" id="code" placeholder="6-digit verification code" inputmode="numeric">
+<button class="btn" onclick="demo()">Continue</button>
+<div class="link">Didn't receive a code?</div>
+<div id="msg">This is a local visual simulation. Nothing you entered was collected or sent anywhere.</div>
+</div>
+<script>
+function demo(){
+  document.getElementById("msg").style.display="block";
+}
+</script>
+</body>
+</html>
